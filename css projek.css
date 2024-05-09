@@ -1,0 +1,177 @@
+/* Header */
+
+.header,
+.header2,
+.header3 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: orange;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.sidebar.show {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: navy;
+    text-decoration: none;
+}
+
+.sidebar ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 20px;
+}
+
+.sidebar ul ul {
+    position: static;
+    display: none;
+}
+
+.jarak {
+    padding-left: 10px
+}
+
+
+/* Button */
+
+.btn {
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background-color: black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn.click {
+    right: 260px;
+}
+
+.btn span {
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+
+/* Article */
+
+.article,
+.article2,
+.article3 {
+    text-align: left;
+    font-size: 1.3em;
+    padding: 20px;
+    font-family: 'Times New Roman';
+    transition: margin-left 0.3s ease;
+    margin-left: 250px;
+}
+
+
+/* Footer */
+
+.footer1,
+.footer2,
+.footer3 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    font-family: Arial;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    height: 50px;
+}
+
+
+/* Responsif */
+
+@media screen and (max-width:768px) {
+    .article,
+    .article2,
+    .article3 {
+        margin-left: 0;
+    }
+    .article.click {
+        margin-left: 250px;
+    }
+    .main,
+    .konten1,
+    .hobi {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+
+/* Main, Konten1, Hobi */
+
+.sidebar.show {
+    left: 0;
+}
+
+
+/* Gambar */
+
+.foto {
+    float: left;
+    margin-right: 20px;
+    width: 18%;
+    height: 70%;
+}
+
+
+.sepeda{
+    height: 50vh;
+    width: 50vh;
+}
+
+.rubik{
+    height: 50vh;
+    width: 50vh;
+}
+
+
+.ukulele{
+    height: 50vh;
+    width: 50vh;
+}
+
+
+.catur{
+    height: 50vh;
+    width: 50vh;
+}
